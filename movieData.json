@@ -1,0 +1,29 @@
+[
+  {
+    "id":0,
+    "title":"avata",
+    "director":"kimsk",
+    "year":"1991",
+    "synopsis":"옛날 옛날 한 옛날에 다섯 아이가 ~~~"
+  },
+
+  {
+    "id":1,
+    "title":"우리엄만 대지다",
+    "director":"김꼬미",
+    "year":"2010",
+    "synopsis":"우리꼬미가 밤11시에 밥을처먹고 트름을 한다."
+
+  },
+
+  {
+
+    "id":2,
+    "title":"정글북",
+    "director":"윌리암스",
+    "year":"2016",
+    "synopsis":"정글북정글정글 북북"
+
+    
+  }
+]
