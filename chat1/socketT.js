@@ -6,10 +6,9 @@ var server = http.createServer(app);
 server.listen(3000);
 
 app.get('/',function(req,res){
-   res.sendFile(__dirname + '/client_jsp.html');
-    // res.send(lastModified);
-
-
+  console.log('eefefefef');
+  // res.sendFile(__dirname + '/client_jsp.html');
+  res.sendUrl('localhost:8080');
 });
 
 var io = require('socket.io')(server);
