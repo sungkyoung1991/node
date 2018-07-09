@@ -5,23 +5,23 @@ var app = express();
 var server = http.createServer(app);
 server.listen(3000);
 
-app.get('/',function(req,res){
-   res.sendFile(__dirname + '/client_jsp.html');
-    // res.send(lastModified);
-
-
-});
+// app.get('/',function(req,res){
+//    res.sendFile(__dirname + '/client_jsp.html');
+// });
 
 var io = require('socket.io')(server);
 io.on('connect',function(socket) {
-  console.log('node server 클라이언트 접속');
+  console.log('클라이언트 접속');
 
   socket.on('disconnect',function(){
     console.log('클라이언트 접속 종료');
   });
 
-  setInterval(function(){
-    socket.emit('message','메시지');
-  }, 3000);
+  socket.on('chat message', function(msg){
+    console.log('message: ' + msg);
+  });
 
+  // setInterval(function(){
+  //   socket.emit('message','메시지');
+  // }, 3000);
 });
